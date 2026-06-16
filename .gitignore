@@ -1,0 +1,119 @@
+# ===============================
+#  Python 虚拟环境（绝对不要提交）
+# ===============================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ===============================
+#  LangGraph / SQLite 检查点数据库（你的截图里遇到的）
+# ===============================
+*.db
+*.sqlite
+*.sqlite3
+checkpoints.db
+data/checkpoints.db
+data/*.db
+
+# ===============================
+#  向量数据库（RAG 本地存储，体积大且含路径）
+# ===============================
+chroma_db/
+rag_chroma_db/
+faiss_index/
+*.parquet
+*.bin
+
+# ===============================
+#  Python 编译缓存
+# ===============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.dll
+.Python
+
+# ===============================
+#  包管理器相关
+# ===============================
+*.egg-info/
+*.egg
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+parts/
+var/
+*.whl
+
+# ===============================
+#  系统文件（macOS / Windows）
+# ===============================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ===============================
+#  IDE / 编辑器配置
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.iml
+
+# ===============================
+#  Streamlit 敏感配置（含 API Key）
+# ===============================
+.streamlit/secrets.toml
+.streamlit/config.toml  # 如果只是主题配置可以提交，但谨慎起见先忽略
+
+# ===============================
+#  环境变量 / 密钥文件
+# ===============================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+
+# ===============================
+#  日志 & 临时文件
+# ===============================
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ===============================
+#  测试覆盖率
+# ===============================
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# ===============================
+#  Jupyter Notebook（如果有）
+# ===============================
+.ipynb_checkpoints/
+*.ipynb
