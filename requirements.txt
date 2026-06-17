@@ -5,3 +5,4 @@ chromadb
 zhipuai
 python-dotenv
 pypdf
+langgraph-checkpoint-sqlite
